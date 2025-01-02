@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Blog</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">YourName<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="index.html" class="active">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Thoughts on Data Science, Machine Learning, and Technology</p>
+            
+            <!-- Blog Categories -->
+            <div class="blog-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="machine-learning">Machine Learning</button>
+                <button class="category-btn" data-category="data-science">Data Science</button>
+                <button class="category-btn" data-category="tutorials">Tutorials</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog Post Card 1 -->
+                <article class="blog-card" data-category="machine-learning">
+                    <div class="blog-card-image">
+                        <img src="../assets/images/blog/post1.jpg" alt="Blog Post 1">
+                        <div class="blog-category">Machine Learning</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Jan 15, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h2>Understanding Neural Networks: A Beginner's Guide</h2>
+                        <p>An introduction to neural networks and their applications in modern machine learning...</p>
+                        <a href="posts/blog-post-1.html" class="read-more">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Add more blog post cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>© 2024 Your Name. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/yourhandle" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/blog.js"></script>
+    <button id="scrollToTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
